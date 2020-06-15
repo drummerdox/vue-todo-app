@@ -1,14 +1,10 @@
 <template>
   <div id="app">
     <h1>Todo app</h1>
-    <AddTodo @add-todo="addTodo"/>
     <hr>
-    <TodoList
-            v-bind:todos="todos"
-            @remove-todo="removeTodo"
-    />
     <!--<img alt="Vue logo" src="./assets/logo.png">-->
     <!--<HelloWorld msg="Welcome to Your Vue.js App"/>-->
+    <router-view/>
   </div>
 </template>
 
